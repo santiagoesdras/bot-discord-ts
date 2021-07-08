@@ -1,0 +1,24 @@
+{
+  "name": "bot-discord-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tsc",
+    "start" : "node dist/bot.js",
+    "dev" : "nodemon -e ts --exec \"npm run build && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.1",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.9",
+    "typescript": "^4.3.5"
+  }
+}
