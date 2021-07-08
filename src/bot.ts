@@ -31,13 +31,11 @@ client.on('message',async (message:Message) => {
               member.kick('').then(() => {
                 message.reply(`${user.tag} expulsado`);
               })
-              .catch(err => {
+               .catch(err => {
                 message.reply('No pude expulsar al miembro');
                 console.error(err);
-              });
-          } else {
-            message.reply("¡Ese usuario no está en este gremio!");
-          }
+              }); 
+          } 
         } else {
           message.reply("No mencionaste al usuario");
         }}

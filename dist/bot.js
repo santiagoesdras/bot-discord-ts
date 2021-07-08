@@ -44,9 +44,6 @@ client.on('message', (message) => __awaiter(void 0, void 0, void 0, function* ()
                         console.error(err);
                     });
                 }
-                else {
-                    message.reply("¡Ese usuario no está en este gremio!");
-                }
             }
             else {
                 message.reply("No mencionaste al usuario");
